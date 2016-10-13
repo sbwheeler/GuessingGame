@@ -9,14 +9,17 @@
       <div class = 'container-fluid'>
         <div id='app'>
           <div id='headers' class='row'>
-            <h1 class='center col-md-12'>Play the Guessing Game!</h1>
-            <h3 class='center col-md-12'> Guess a number between 1-100!</h3>
+            <h1 class='center col-md-12' id='title'>PLAY THE GUESSING GAME</h1>
+          </div>
+          <div id='headers' class='row'>
+            <h3 class='center col-md-12' id='subtitle'> GUESS A NUMBER BETWEEN 1 AND 100</h3>
           </div>
 
           <div id='main'>
             <div id='input-parent'>
-              <form class='center'>
+              <form class='center' id='mybutton'>
                 <input type="text" name="guess" placeholder="Your guess here." maxlength=3 autofocus>
+                <button class="btn btn-success">Go!</button>
               </form>
             </div>
 
@@ -31,30 +34,30 @@
             </div>
 
             <div id="menu-btns" class='center'>
-              <button type="button">Reset</button>
-              <button type="button">Hint</button>
+              <button type="button" class="btn btn-danger">Reset</button>
+              <button type="button" class="btn btn-warning">Hint</button>
             </div>
           </div>
         </div>
 
 
 
-      <div id='footer'>
-          <div>
-            <div id='fullstack'>
-              <img src='fa-logo@2x.png'></img>
+      <div class='row' id='footer'>
+          
+            <div class='col-md-4 center' id='fullstack'>
+              <img src='fa-logo@2x.png' class='logos'></img>
             </div>
 
-            <div class='center' id='credit'>
+            <div class='col-md-4 center' id='credit'>
               <h4>Project by Sam Wheeler</h4>
             </div>
 
-            <div id='gracehopper'>
-              <img src='grace_hopper_academy.png'></img>
+            <div class='col-md-4 center' id='gracehopper'>
+              <img src='grace_hopper_academy.png' class='logos'></img>
             </div>
 
 
-          </div>
+          
       </div>
     </div>
 
