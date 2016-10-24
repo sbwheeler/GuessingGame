@@ -1,5 +1,5 @@
 body {
-    background-image: url('background.jpg');
+    background-image: url('../img/background.jpg');
     background-size: 100%;
 }
 @font-face {
@@ -13,7 +13,7 @@ body {
   letter-spacing: 1.5vw;
   font-weight: 600;
   font-family: Raleway;
-  text-shadow: 3px 2px 4px rgba(150, 150, 150, 1);
+  text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
 }
 #subtitle {
   margin-bottom: 5%;
@@ -22,12 +22,12 @@ body {
   letter-spacing: .2vw;
   font-family: Raleway;
   font-weight: 600;
-  text-shadow: 3px 2px 4px rgba(150, 150, 150, 1);
+  text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
 }
 .center {
   text-align: center;
 }
-#input {
+#player-input {
   width: 55%;
   padding-top: 20%;
   padding-bottom: 20%;
@@ -37,7 +37,7 @@ body {
   font-size: xx-large;
   margin-top:-10%;
 }
-#input:focus {
+#player-input:focus {
   outline: none;
 }
 #mybutton {
@@ -55,6 +55,9 @@ body {
   bottom: 33%;
   left: 52%;
 }
+.gobutton:focus {
+  outline: none;
+}
 .gobutton:hover {
   opacity: 1;
 }
@@ -62,6 +65,9 @@ body {
   background-color: #9b5806;
   border: 1px solid #9b5806;
   opacity: 0.9;
+}
+.dangerbutton:focus {
+  outline: none;
 }
 .dangerbutton:hover {
   opacity: 1;
@@ -71,6 +77,9 @@ body {
   border: 1px solid #1c76a0;
   opacity: 0.9;
   margin-left: 1%;
+}
+.warningbutton:focus {
+  outline: none;
 }
 .warningbutton:hover {
   opacity: 1;

@@ -3,7 +3,7 @@
   <head>
     <title>Guessing Game</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     
   </head>
   <body>
@@ -13,30 +13,30 @@
             <h1 class='center col-md-12' id='title'>PLAY THE GUESSING GAME</h1>
           </div>
           <div id='headers' class='row'>
-            <h3 class='center col-md-12' id='subtitle'> GUESS A NUMBER BETWEEN 1 AND 100</h3>
+            <h3 class='center col-md-12' id='subtitle'>GUESS A NUMBER BETWEEN 1 AND 100</h3>
           </div>
 
           <div id='main'>
             <div id='input-parent'>
               <form class='center' id='mybutton'>
-                <input id="input" type="text" name="guess" placeholder="#" maxlength=3 autofocus>
-                <button class="btn btn-success gobutton">GO</button>
+                <input id="player-input" type="text" name="guess" placeholder="#" autocomplete ="off" maxlength=3 autofocus>
+                <button class="btn btn-success gobutton" id="submit">GO</button>
               </form>
             </div>
 
             <div id='guesses' class='center'>
-              <ul>
-                <li>-</li>
-                <li>-</li>
-                <li>-</li>
-                <li>-</li>
-                <li>-</li>
+              <ul id="guesslist">
+                <li>--</li>
+                <li>--</li>
+                <li>--</li>
+                <li>--</li>
+                <li>--</li>
               </ul>
             </div>
 
             <div id="menu-btns" class='center subbuttons'>
-              <button type="button" class="btn btn-warning dangerbutton">RESET</button>
-              <button type="button" class="btn btn-info warningbutton">HINT</button>
+              <button type="button" class="btn btn-warning dangerbutton" id="resetbutton">RESET</button>
+              <button type="button" class="btn btn-info warningbutton" id="hintbutton">HINT</button>
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@
       <div class='row' id='footer'>
           
             <div class='col-md-4 center' id='fullstack'>
-              <img src='fa-logo@2x.png' class='logos'></img>
+              <img src='img/fa-logo@2x.png' class='logos'></img>
             </div>
 
             <div class='col-md-4 center' id='credit'>
@@ -54,13 +54,14 @@
             </div>
 
             <div class='col-md-4 center' id='gracehopper'>
-              <img src='grace_hopper_academy.png' class='logos'></img>
+              <img src='img/grace_hopper_academy.png' class='logos'></img>
             </div>
 
 
           
       </div>
     </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/GuessingGame.js"></script>
   </body>
 </html>
